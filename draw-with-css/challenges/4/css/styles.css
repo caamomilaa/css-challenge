@@ -25,4 +25,16 @@ Colors:
   rotate: 45deg;
   top: -47px;
   left: 10px;
+  /*box-shadow: 145px 150px red; > hace cosas raras porque el cuadrado está rotado?*/
+}
+.shape::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: #4893d2;
+  rotate: 45deg;
+  top: 207px;
+  left: 10px;
+  z-index: 1;
 }

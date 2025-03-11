@@ -5,10 +5,36 @@ Colors:
   Blue: #4CAAB3
   Grey: #393E46
 */
-
 .box {
   background-color: #222730;
 }
 
-.shape {
+.shape{
+  position: relative;
+  width: 500px;
+  height: 150px;
+  background-color: #4CAAB3;
+  top: 75px;
+}
+.shape::after{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #4CAAB3;
+  rotate: 45deg;
+  left: 122px;
+  box-shadow: -43px 43px #222730, 43px -43px #222730;
+}
+
+.shape::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #393E46;
+  top: 50px;
+  left: 175px;
+  z-index: 1;
 }
